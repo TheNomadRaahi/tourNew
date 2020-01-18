@@ -1,0 +1,6 @@
+{% extends 'hello/basic.html' %}
+{% block body %}
+{% with v=th.it_desc %}
+	{% include "hello/"|add:v %}
+{% endwith %}
+{% endblock %}
